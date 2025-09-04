@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="CHOOSE_PER_TEST" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleJvm" value="#GRADLE_LOCAL_JAVA_HOME" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/analytics" />
+            <option value="$PROJECT_DIR$/androidshared" />
+            <option value="$PROJECT_DIR$/androidtest" />
+            <option value="$PROJECT_DIR$/async" />
+            <option value="$PROJECT_DIR$/audio-clips" />
+            <option value="$PROJECT_DIR$/audio-recorder" />
+            <option value="$PROJECT_DIR$/base" />
+            <option value="$PROJECT_DIR$/collect_app" />
+            <option value="$PROJECT_DIR$/crash-handler" />
+            <option value="$PROJECT_DIR$/db" />
+            <option value="$PROJECT_DIR$/draw" />
+            <option value="$PROJECT_DIR$/entities" />
+            <option value="$PROJECT_DIR$/errors" />
+            <option value="$PROJECT_DIR$/external-app" />
+            <option value="$PROJECT_DIR$/forms" />
+            <option value="$PROJECT_DIR$/forms-test" />
+            <option value="$PROJECT_DIR$/fragments-test" />
+            <option value="$PROJECT_DIR$/geo" />
+            <option value="$PROJECT_DIR$/glide" />
+            <option value="$PROJECT_DIR$/google-maps" />
+            <option value="$PROJECT_DIR$/icons" />
+            <option value="$PROJECT_DIR$/image-loader" />
+            <option value="$PROJECT_DIR$/lists" />
+            <option value="$PROJECT_DIR$/location" />
+            <option value="$PROJECT_DIR$/maps" />
+            <option value="$PROJECT_DIR$/material" />
+            <option value="$PROJECT_DIR$/metadata" />
+            <option value="$PROJECT_DIR$/nbistubs" />
+            <option value="$PROJECT_DIR$/osmdroid" />
+            <option value="$PROJECT_DIR$/permissions" />
+            <option value="$PROJECT_DIR$/printer" />
+            <option value="$PROJECT_DIR$/projects" />
+            <option value="$PROJECT_DIR$/qr-code" />
+            <option value="$PROJECT_DIR$/selfie-camera" />
+            <option value="$PROJECT_DIR$/service-test" />
+            <option value="$PROJECT_DIR$/settings" />
+            <option value="$PROJECT_DIR$/shadows" />
+            <option value="$PROJECT_DIR$/shared" />
+            <option value="$PROJECT_DIR$/strings" />
+            <option value="$PROJECT_DIR$/test-forms" />
+            <option value="$PROJECT_DIR$/test-shared" />
+            <option value="$PROJECT_DIR$/upgrade" />
+            <option value="$PROJECT_DIR$/web-page" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

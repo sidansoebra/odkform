@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/appBarLayout"
+    android:background="#F6F7FB"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/len_60"
+    app:liftOnScrollTargetViewId="@+id/scrollable_container">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/back_button"
+                android:scaleType="centerInside"
+                android:paddingStart="15dp"
+                android:src="@drawable/icon_arrow_back_left"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                tools:ignore="ContentDescription,RtlSymmetry" />
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:layout_height="match_parent">
+                <com.google.android.material.appbar.MaterialToolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="?attr/actionBarSize"
+                    tools:title="Title" />
+
+                <dz.solc.viewtool.view.textview.FilletView
+                    android:layout_marginStart="@dimen/len_10"
+                    android:layout_marginEnd="@dimen/len_10"
+                    android:id="@+id/fvGoNextForm"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:paddingLeft="@dimen/len_10"
+                    android:paddingRight="@dimen/len_10"
+                    android:paddingVertical="@dimen/len_5"
+                    android:gravity="center_vertical"
+                    android:text="跳过此表"
+                    android:textSize="@dimen/font_20"
+                    android:textStyle="bold"
+                    app:f_cornerRadius="@dimen/len_80"
+                    app:f_normalBgColor="#21122F"
+                    app:f_normalTextColor="@color/white"
+                    app:f_pressedBgColor="#21122F"
+                    app:f_pressedTextColor="@color/white"
+                    app:f_strokeWidth="0dp"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/llProgress"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <TextView
+                    tools:text="1"
+                    android:textSize="@dimen/font_28"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:textColor="#A885D3"
+                    android:id="@+id/tvCurrentProgress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:text="/"
+                    android:textSize="@dimen/font_28"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+                <TextView
+                    android:layout_marginEnd="@dimen/len_10"
+                    tools:text="6"
+                    android:textSize="@dimen/font_28"
+                    android:textStyle="bold"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:id="@+id/tvCountProgress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+
+                <com.xw.net.view.RoundProgressBar
+                    android:layout_marginEnd="@dimen/len_20"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/newProgressBar"
+                    android:layout_width="200dp"
+                    android:layout_height="@dimen/len_26"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <org.odk.collect.androidshared.ui.ObviousProgressBar
+            android:id="@+id/progressBar"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.appbar.AppBarLayout>
