@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    app:startDestination="@id/lists">
+
+    <fragment
+        android:id="@+id/lists"
+        android:name="org.odk.collect.entities.browser.EntityListsFragment"
+        android:label="@string/entities_title">
+        <action
+            android:id="@+id/lists_to_entities"
+            app:destination="@id/entities" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/entities"
+        android:name="org.odk.collect.entities.browser.EntitiesFragment"
+        android:label="{list}">
+        <argument
+            android:name="list"
+            app:argType="string" />
+    </fragment>
+</navigation>
